@@ -1,0 +1,19 @@
+/**
+ * matrix_sim/style.css
+ */
+
+body {
+    width: 500px;
+    margin: auto;
+}
+
+.led {
+    width: 30px;
+    height: 30px;
+
+    padding: 0;
+    margin: 0 2px;
+
+    display: inline-block;
+    background-color: gray;
+}
