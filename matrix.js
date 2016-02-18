@@ -1,5 +1,5 @@
 /**
- * matrix_sim/main.js
+ * matrix_sim/matrix.js
  */
 
 const WIDTH  = 5;
