@@ -21,6 +21,15 @@ for (var y = 0; y < HEIGHT; y++) {
 }
 
 function set_led(x, y, color) {
+    if (x < 0 || x >= WIDTH) {
+        console.error("x < 0 or x >= WIDTH where x = " + x);
+        return;
+    }
+    if (y < 0 || y >= HEIGHT) {
+        console.error("y < 0 or y >= HEIGHT where y = " + y);
+        return;
+    }
+
     var led = document.getElementById("led-" + x + "-" + y);
     led.style.backgroundColor = color;
 }
