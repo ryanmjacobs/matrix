@@ -8,7 +8,6 @@ const RED    = "#f00";
 const GREEN  = "#0f0";
 const OFF    = "#666";
 
-
 /* Setup DOM */
 var matrix = document.getElementById("matrix");
 for (var y = 0; y < HEIGHT; y++) {
