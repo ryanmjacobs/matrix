@@ -4,19 +4,24 @@
 
 const initial_state = {
     x: 0,
-    y: HEIGHT-1,
+    y: 1,
 
-    done: false,
-    delay: 500
+    delay: 200,
+    direction: true // aka down
 }
 
 function advance_state(state) {
-    if (state.y < 0) {
-        clear();
-        return Object.create(initial_state);
+    clear();
+
+    if (state.y <= 0 || state.y >= HEIGHT-1) {
+        state.direction = !state.direction;
     }
 
-    set_row(state.y--, RED);
+    if (state.direction) {
+        set_row(state.y++, RED);
+    } else {
+        set_row(state.y--, RED);
+    }
 
     return state;
 }
