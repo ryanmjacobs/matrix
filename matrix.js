@@ -30,10 +30,10 @@ function set_led(x, y, color) {
     led.style.backgroundColor = color;
 }
 
-function reset(x, y, color) {
+function clear() {
     for (var y = 0; y < HEIGHT; y++) {
         for (var x = 0; x < WIDTH; x++) {
-            set_led(x, y, color);
+            set_led(x, y, OFF);
         }
     }
 }
